@@ -1,0 +1,8 @@
+﻿{
+	"AppSettings": {
+		"SiteEmailAddress": "test.test@test.com"
+	},
+	"Data": {
+		"MpeContextConnection": "Server=(localdb)\\ProjectsV12;Database=MpeDB;Trusted_Connection=True;MultipleActiveResultSets=true;"
+	}
+}

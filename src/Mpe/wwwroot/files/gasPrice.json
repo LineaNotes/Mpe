@@ -1,0 +1,62 @@
+[
+  {
+    "zaporedniVnos": 1,
+    "gDate": "2013-05-07T00:00:00",
+    "gPrice": 0.5
+  },
+  {
+    "zaporedniVnos": 2,
+    "gDate": "2013-07-08T00:00:00",
+    "gPrice": 0.9
+  },
+  {
+    "zaporedniVnos": 3,
+    "gDate": "2013-09-09T00:00:00",
+    "gPrice": 1.1
+  },
+  {
+    "zaporedniVnos": 4,
+    "gDate": "2013-11-10T00:00:00",
+    "gPrice": 1.5
+  },
+  {
+    "zaporedniVnos": 5,
+    "gDate": "2014-01-13T00:00:00",
+    "gPrice": 1.7
+  },
+  {
+    "zaporedniVnos": 6,
+    "gDate": "2014-04-14T00:00:00",
+    "gPrice": 1.6
+  },
+  {
+    "zaporedniVnos": 7,
+    "gDate": "2014-07-15T00:00:00",
+    "gPrice": 1.2
+  },
+  {
+    "zaporedniVnos": 8,
+    "gDate": "2014-10-16T00:00:00",
+    "gPrice": 0.4
+  },
+  {
+    "zaporedniVnos": 9,
+    "gDate": "2015-01-17T00:00:00",
+    "gPrice": 0.5
+  },
+  {
+    "zaporedniVnos": 10,
+    "gDate": "2015-02-18T00:00:00",
+    "gPrice":0.6
+  },
+  {
+    "zaporedniVnos": 11,
+    "gDate": "2015-03-19T00:00:00",
+    "gPrice": 0.7
+  },
+  {
+    "zaporedniVnos": 12,
+    "gDate": "2015-04-20T00:00:00",
+    "gPrice": 0.8
+  }
+]

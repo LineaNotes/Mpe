@@ -1,0 +1,134 @@
+﻿html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow-y: scroll;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+			will truncate terms that are too long to fit in the left column 
+*/
+
+.dl-horizontal dt {
+	white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+	max-width: 280px;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+
+}
+
+header {
+	height: 275px;
+	background: url(../img/cpg_ozadje_1.jpg) repeat right 0;
+	-webkit-flex: 0 0 275px;
+	-moz-flex: 0 0 275px;
+	-ms-flex: 0 0 275px;
+	flex: 0 0 275px;
+}
+
+nav {
+	background: #ccc;
+	width: 100%;
+	-webkit-flex: 0 0 50px;
+	-moz-flex: 0 0 50px;
+	-ms-flex: 0 0 50px;
+	flex: 0 0 50px;
+}
+
+section {
+	background: #eee;
+	-webkit-flex: 1 0 auto;
+	-moz-flex: 1 0 auto;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (max-width: 768px) {
+	section {
+		flex: 1 0 auto;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.container {
+		margin: 0; 
+	}
+}
+
+article {
+	background: #fff;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	order: 0;
+}
+
+#left {
+	background: #ccc;
+	-webkit-flex: 0 0 200px;
+	-moz-flex: 0 0 200px;
+	-ms-flex: 0 0 200px;
+	flex: 0 0 200px;
+	order: -1;
+}
+
+aside {
+	background: #ddd;
+	-webkit-flex: 0 0 200px;
+	-moz-flex: 0 0 200px;
+	-ms-flex: 0 0 200px;
+	flex: 0 0 200px;
+	order: 1;
+}
+
+footer {
+	background: #888;
+	width: 100%;
+	-webkit-flex: 0 0 30px;
+	-moz-flex: 0 0 30px;
+	-ms-flex: 0 0 30px;
+	flex: 0 0 30px;
+}
+
+footer p {
+	line-height: 30px;
+	margin-bottom: 0;
+}

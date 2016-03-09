@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+	<title>MPE - @ViewBag.Title</title>
+	<meta charset="utf-8" />
+
+	<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+	<link href="~/lib/bootswatch/yeti/bootstrap.css" rel="stylesheet" />
+	<link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+	<link href="~/css/test.css" rel="stylesheet" />
+
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header></header>
+	<!-- /HEADER -->
+	<!-- NAVBAR -->
+	<nav class="container-fluid">
+		<ul class="nav navbar-nav">
+			<li></li>
+			@if (User.Identity.IsAuthenticated)
+			{
+				<li>
+					<a asp-controller="App" asp-action="Lookup">Poizvedbe</a>
+				</li>
+				<li>
+					<a asp-controller="App" asp-action="Graph">Grafi</a>
+				</li>
+				<li>
+					<a asp-controller="App" asp-action="Price">Vnos cene</a>
+				</li>
+				<li>
+					<a asp-controller="Auth" asp-action="Admin">Admin</a>
+				</li>
+				<li>
+					<a asp-controller="Auth" asp-action="Register">Registracija</a>
+				</li>
+				<li>
+					<a asp-controller="Auth" asp-action="Logout">Odjava</a>
+				</li>
+				<li>
+					<a id="username">Uporabnik: @User.Identity.Name</a>
+				</li>
+			}
+		</ul>
+	</nav>
+	<!-- /NAVBAR -->
+	<!-- MIDDLE -->
+	<section>
+
+		@RenderBody()
+
+	</section>
+	<!-- /MIDDLE -->
+	<!-- FOOTER -->
+	<footer class="container-fluid">
+		<p class="text-primary">Anže Premrl &copy; 2016 - Meritev Porabe Energentov</p>
+	</footer>
+	<!-- /FOOTER -->
+	<!-- SKRIPTE -->
+	<script src="~/lib/jquery/dist/jquery.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="~/js/site.js"></script>
+
+	@RenderSection("Scripts", false)
+	<!-- /SKRIPTE -->
+
+</body>
+</html>
